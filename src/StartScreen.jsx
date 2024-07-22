@@ -1,7 +1,8 @@
 import React from 'react';
 import './StartScreen.css';
 
-function StartScreen({ onStart }) {
+function StartScreen({ onStart })
+{
   return (
     <div className="start-container">
       <div className="start-content">
