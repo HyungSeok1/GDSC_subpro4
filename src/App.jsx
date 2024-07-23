@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import StartScreen from './StartScreen';
+import Result from './Result';
 import './App.css';
 
 const questions = [
@@ -11,15 +12,18 @@ const questions = [
 ];
 
 const options = [
-  ["전 지역", "참살이길", "개운사길", "정후", "정문"],
+  ["참살이길", "개운사길", "정문"],
   ["한식", "일식", "중식", "양식", "분식", "패스트푸드", "기타"],
   ["돼지", "소", "닭", "해산물"],
-  ["만원 이하", "만원 초과", "상관 없음"],
-  ["월", "화", "수", "목", "금", "토", "일", "미정"]
+  ["만원 이하", "만원 초과"],
+  ["월", "화", "수", "목", "금", "토", "일"]
 ];
+
+var selectedOptionsArray = [];
 
 function App() {
   const [isStart, setIsStart] = useState(true);
+  const [isComplete, setIsComplete] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedOptions, setSelectedOptions] = useState(
     Array(questions.length).fill(new Set())
@@ -54,23 +58,26 @@ function App() {
   };
 
   const handleComplete = () => {
+    setIsComplete(true);
     // 각 질문의 선택된 옵션들을 반환
-    const selectedOptionsArray = selectedOptions.map((selection, index) => ({
-      question: questions[index],
+    selectedOptionsArray = selectedOptions.map((selection, index) => ({
       selectedOptions: Array.from(selection)
     }));
-    console.log("각 질문의 선택된 옵션들:", selectedOptionsArray);
+
   };
 
   return (
     <div className="container">
       {isStart ? (
         <StartScreen onStart={() => setIsStart(false)} />
+      ) : isComplete ? (
+        <Result result={selectedOptionsArray} />
       ) : (
         <>
-          <header className="header">
+          <header className="header" onClick={() => window.location.reload()}>
             <h1>안밥</h1>
           </header>
+
           <main className="main-content">
             <h2>{questions[currentQuestion]}</h2>
             <div className="options">

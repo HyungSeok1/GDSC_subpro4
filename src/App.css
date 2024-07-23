@@ -22,7 +22,9 @@
   justify-content: center;
   align-items: center;
   background-color: #f8f9fa;
+  cursor: pointer; 
 }
+
 
 .header h1
 {
