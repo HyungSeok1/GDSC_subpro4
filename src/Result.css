@@ -1,15 +1,12 @@
 header {
-  height: 5%;
+  height: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f8f9fa;
+  background-color: #ffffff;
   cursor: pointer;
 }
 
-.container {
-  margin-bottom: 30px;
-}
 main p {
   margin: 0 auto;
 }
@@ -37,8 +34,8 @@ a:hover {
   display: flex;
   background-color: #ebeff1;
   border-radius: 30px;
-  padding: 30px;
-  margin: 30px auto;
+  padding: 20px;
+  margin: 20px auto;
   width: 85%;
   max-width: 500px;
   align-items: center;
