@@ -1,0 +1,14 @@
+@font-face {
+  font-family: '잘풀리는오늘OTF Medium';
+  src: url('./fonts/잘풀리는오늘OTF Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'NanumBarunGothicBold.ttf';
+  src: url('./fonts/NanumBarunGothicBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'BMJUA_ttf.ttf';
+  src: url('./fonts/BMJUA_ttf.ttf') format('truetype');
+}
