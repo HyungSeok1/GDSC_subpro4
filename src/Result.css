@@ -1,5 +1,5 @@
 header {
-  height: 10%;
+  height: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,6 +7,9 @@ header {
   cursor: pointer;
 }
 
+.container {
+  margin-bottom: 30px;
+}
 main p {
   margin: 0 auto;
 }

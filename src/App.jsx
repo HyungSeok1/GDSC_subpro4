@@ -40,6 +40,9 @@ function App() {
   const handleBack = () => {
     if (currentQuestion > 0) {
       setCurrentQuestion(currentQuestion - 1);
+    } else if (currentQuestion === 0) {
+      setIsStart(true);
+      window.location.reload();
     }
   };
 
