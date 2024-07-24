@@ -4,8 +4,15 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-  cursor: pointer;
+  pointer-events: none;
 }
+
+/* 오직 텍스트 span에서만 클릭 가능 */
+header h1 span {
+  pointer-events: auto;
+  cursor: pointer; 
+}
+
 
 main p {
   margin: 0 auto;
@@ -24,6 +31,7 @@ a {
   padding: 10px;
   margin: 0;
   border-radius: 10px;
+  white-space: nowrap; /* 네이버지도에서 보기 줄바꿈 x */
 }
 
 a:hover {

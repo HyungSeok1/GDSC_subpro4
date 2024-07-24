@@ -36,8 +36,12 @@ function Result(result) {
 
   return (
     <div className="container">
-      <header className="header" onClick={() => window.location.reload()}>
-        <h1>안밥</h1>
+      <header className="header">
+        <h1>
+          <span onClick={() => window.location.reload()}>
+            안밥
+          </span>
+        </h1>
       </header>
       <main>
         <h2>

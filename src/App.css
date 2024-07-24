@@ -43,6 +43,7 @@
   text-align: center;
 }
 
+
 .options {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(33%, auto));
@@ -102,5 +103,5 @@
 }
 
 .nav-button-next:hover {
-  background-color: #f87d77;
+  background-color: #ffada8;
 }
