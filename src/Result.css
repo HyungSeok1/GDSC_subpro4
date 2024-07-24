@@ -1,47 +1,63 @@
 header {
-    height: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f8f9fa;
-    cursor: pointer;
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  cursor: pointer;
 }
 
+.container {
+  margin-bottom: 30px;
+}
 main p {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 h2 {
-    text-align: center;
-    margin: 30px;
+  text-align: center;
+  margin: 30px;
 }
 
 a {
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 15px;
-    background-color: #d0f0ff;
-    padding: 10px;
-    margin: 0;
-    border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #d0f0ff;
+  padding: 10px;
+  margin: 0;
+  border-radius: 10px;
 }
 
 a:hover {
-    background-color: #c8edfe;
+  background-color: #c8edfe;
 }
 
 .restaurant {
-    display: flex;
-    background-color: #ebeff1;
-    border-radius: 30px;
-    padding: 30px;
-    margin: 30px auto;
-    width: 85%;
-    max-width: 500px;
-    align-items: center;
+  display: flex;
+  background-color: #ebeff1;
+  border-radius: 30px;
+  padding: 30px;
+  margin: 30px auto;
+  width: 85%;
+  max-width: 500px;
+  align-items: center;
 }
 
 .restaurant p {
-    font-size: 20px;
-    font-weight: 500;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.start-button {
+  padding: 20px 110px;
+  font-family: 'BMJUA_ttf.ttf';
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 15px;
+  background-color: #ffada8;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
 }

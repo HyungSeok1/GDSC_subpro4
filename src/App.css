@@ -1,40 +1,35 @@
-* 
-{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'BMJUA_ttf.ttf';
+  font-weight: lighter;
 }
 
-
-.container
-{
+.container {
   display: flex;
   flex-direction: column;
   height: 100vh;
   font-family: Arial, sans-serif;
 }
 
-
-.header
-{
+.header {
   height: 10%;
+  margin-top: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f8f9fa;
-  cursor: pointer; 
+  background-color: #ffffff;
+  cursor: pointer;
 }
 
-
-.header h1
-{
-  font-size: 3rem; /* 안밥 크기 */
+.header h1 {
+  font-family: '잘풀리는오늘OTF Medium';
+  font-size: 5rem; /* 안밥 크기 */
   color: #343a40;
 }
 
-
-.main-content
-{
+.main-content {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -43,67 +38,70 @@
   padding: 20px;
 }
 
-
-.main-content h2
-{
+.main-content h2 {
   margin-bottom: 20px;
   font-size: 1.5rem;
   text-align: center;
 }
 
-
-.options
-{
-  display: flex;
-  flex-direction: column;
+.options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(33%, auto));
+  grid-auto-rows: minmax(0, auto);
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
 }
 
-
-.option-button
-{
-  margin: 10px 0;
-  padding: 10px;
-  font-size: 1rem;
+.option-button {
+  margin: 15px 10px;
+  padding: 20px;
+  font-size: 1.25rem;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #ffffff;
+  border-radius: 10px;
+  background-color: #d9d9d9;
   cursor: pointer;
   text-align: center;
   transition: background-color 0.3s ease;
 }
 
-
-.option-button.selected
-{
-  background-color: #d0f0ff; /* 버튼 색 */
-  border-color: #b0e0ff;
+.option-button.selected {
+  background-color: #ffada8; /* 버튼 색 */
+  border-color: #ffada8;
 }
 
-
-.footer
-{
+.footer {
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
   background-color: #f8f9fa;
 }
 
-
-.nav-button
-{
-  padding: 10px 20px;
-  font-size: 1rem;
+.nav-button-back {
+  padding: 15px 40px;
+  font-size: 1.3rem;
   border: none;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: #ffffff;
+  border-radius: 25px;
+  background-color: #d9d9d9;
+  color: #000000;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+.nav-button-back:hover {
+  background-color: #b5b5b5;
+}
 
-.nav-button:hover
-{
-  background-color: #0056b3;
+.nav-button-next {
+  padding: 15px 40px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 25px;
+  background-color: #ffada8;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button-next:hover {
+  background-color: #f87d77;
 }

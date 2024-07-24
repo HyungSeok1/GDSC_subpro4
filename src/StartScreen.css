@@ -1,49 +1,42 @@
-.start-container
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f8f9fa; /* 배경색 설정 */
+.start-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa; /* 배경색 설정 */
 }
 
-
-.start-content
-{
-    text-align: center;
+.start-content {
+  text-align: center;
 }
 
-
-.subtitle 
-{
-    font-size: 1rem;
-    color: #6c757d;
-    margin-bottom: 10px;
+.subtitle {
+  font-family: 'NanumBarunGothicBold.ttf';
+  font-size: 1.25rem;
+  color: #343a40;
+  margin-bottom: 10px;
 }
 
-
-.title
-{
-    font-size: 4rem; /* 안밥 텍스트 */
-    color: #343a40;
-    margin-bottom: 20px;
+.title {
+  font-family: '잘풀리는오늘OTF Medium';
+  font-size: 8rem; /* 안밥 텍스트 */
+  color: #343a40;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
-
-.start-button
-{
-    padding: 15px 30px;
-    font-size: 1.25rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: #ffffff;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.start-button {
+  padding: 20px 110px;
+  font-family: 'NanumBarunGothicBold.ttf';
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffada8;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-
-.start-button:hover
-{
-    background-color: #0056b3;
+.start-button:hover {
+  background-color: #f87d77;
 }
