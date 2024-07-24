@@ -9,13 +9,12 @@
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  font-family: Arial, sans-serif;
+  height: 95vh;
 }
 
 .header {
-  height: 10%;
-  margin-top: 15%;
+  height: 15%;
+  margin-top: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +24,7 @@
 
 .header h1 {
   font-family: '잘풀리는오늘OTF Medium';
-  font-size: 5rem; /* 안밥 크기 */
+  font-size: 3rem; /* 안밥 크기 */
   color: #343a40;
 }
 
@@ -73,7 +72,7 @@
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: #f8f9fa;
+  background-color: #ffffff;
 }
 
 .nav-button-back {

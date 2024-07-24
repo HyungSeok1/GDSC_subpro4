@@ -78,7 +78,9 @@ function App() {
         //isComplete가 false일 때
         <>
           <header className="header" onClick={() => window.location.reload()}>
-            <h1>안밥</h1>
+            <span>
+              <h1>안밥</h1>
+            </span>
           </header>
 
           <main className="main-content">
