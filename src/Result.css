@@ -10,7 +10,7 @@ header {
 /* 오직 텍스트 span에서만 클릭 가능 */
 header h1 span {
   pointer-events: auto;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 

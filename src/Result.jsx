@@ -38,9 +38,7 @@ function Result(result) {
     <div className="container">
       <header className="header">
         <h1>
-          <span onClick={() => window.location.reload()}>
-            안밥
-          </span>
+         <span onClick={() => window.location.reload()}>안밥</span>
         </h1>
       </header>
       <main>
