@@ -106,7 +106,7 @@ function App() {
               Back
             </button>
             <button className="nav-button-next" onClick={handleNext}>
-              {currentQuestion === questions.length - 1 ? 'Complete' : 'Next'}
+              {currentQuestion === questions.length - 1 ? 'Done' : 'Next'}
             </button>
           </footer>
         </>

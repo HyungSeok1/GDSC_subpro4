@@ -52,8 +52,8 @@
 }
 
 .option-button {
-  margin: 15px 10px;
-  padding: 20px;
+  margin: 15px 5px;
+  padding: 20px 0px;
   font-size: 1.25rem;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -87,7 +87,7 @@
 }
 
 .nav-button-back:hover {
-  background-color: #b5b5b5;
+  background-color: #d9d9d9;
 }
 
 .nav-button-next {
@@ -102,5 +102,5 @@
 }
 
 .nav-button-next:hover {
-  background-color: #f87d77;
+  background-color: #ffada8;
 }
