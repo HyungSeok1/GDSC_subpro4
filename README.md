@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# 안밥: 안암 밥집 추천 서비스
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+안밥은 사용자 맞춤형 음식점 추천 서비스입니다. 사용자가 원하는 조건을 선택하면, 해당 조건에 맞는 음식점을 결과 화면에서 출력합니다.
 
-## Available Scripts
+음식점은 참살이길, 개운사길, 정문 지역만 포함.
 
-In the project directory, you can run:
+## 주요 기능
 
-### `npm start`
+1. **질문 기반 음식점 추천**: 
+    - 사용자는 선호 위치, 음식 종류, 제외할 음식, 가격대, 방문 날짜 등의 질문에 답합니다.
+    - 각 질문에 대해 여러 옵션을 선택할 수 있습니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **선택지 기반 필터링**:
+    - 사용자가 선택한 조건을 바탕으로 데이터에 저장된 음식점 리스트에서 필터링합니다.
+    - 선택한 조건에 맞는 음식점만 결과로 보여줍니다.
+    - 조건에 맞는 음식점이 없다면 '조건에 맞는 식당을 찾지 못했어요 :('를 화면에 출력합니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **결과 화면**:
+    - 조건에 맞는 음식점들이 리스트 형태로 제공됩니다.
+    - 각 음식점의 이름과 네이버 지도 링크가 제공되어 사용자가 쉽게 위치를 확인할 수 있습니다.
 
-### `npm test`
+4. **다시하기**:
+    - 결과 화면에서 다시하기 버튼, 혹은 헤더 클릭을 통해 처음 질문 화면으로 돌아갈 수 있습니다.
+    - 모든 선택된 옵션은 돌아가는 과정에서 초기화됩니다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 사용 기술
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **React**
+- **CSS**
+- **JavaScript**
